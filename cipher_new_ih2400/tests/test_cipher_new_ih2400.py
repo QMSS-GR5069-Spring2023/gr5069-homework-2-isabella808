@@ -3,6 +3,8 @@ from cipher_new_ih2400 import cipher_new_ih2400
 
 import pytest
 
+#these tests need to be performed on edge cases
+
 def cipher(text, shift, encrypt=True):
     alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     new_text = ''
