@@ -28,3 +28,5 @@ def test_cipher_singleword():
 
 def test_version():
     assert __version__ == '0.1.0'
+
+#explain what tests are doing in documentation
