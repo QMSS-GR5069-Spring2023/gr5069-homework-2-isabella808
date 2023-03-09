@@ -23,6 +23,7 @@ def cipher(text, shift, encrypt=True):
     returns: Hello
     
     """
+    # Define the alphabet as a string containing all lowercase and uppercase letters.
     alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
     new_text = ''
     for c in text:
