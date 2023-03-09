@@ -1,3 +1,6 @@
+# this function can be used for multiple use cases, would be good to see potential use cases
+
+
 def cipher(text, shift, encrypt=True):
     """
     This encrypts and decrypts any given text.
