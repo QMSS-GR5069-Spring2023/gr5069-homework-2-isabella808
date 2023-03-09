@@ -23,7 +23,10 @@ def cipher(text, shift, encrypt=True):
     returns: Hello
     
     """
+    # Define the alphabet as a string containing all lowercase and uppercase letters.
     alphabet = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
+
+    # Initialize an empty string for store the encrypted text
     new_text = ''
     for c in text:
         index = alphabet.find(c)
@@ -33,5 +36,6 @@ def cipher(text, shift, encrypt=True):
             new_index = index + shift if encrypt == True else index - shift
             new_index %= len(alphabet)
             new_text += alphabet[new_index:new_index+1]
+    # Return the encrypted/decrypted text.
     return new_text
 
